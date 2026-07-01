@@ -146,6 +146,11 @@ function applyLang(lang) {
   document.documentElement.lang = lang === 'ja' ? 'ja' : 'en';
   localStorage.setItem('polar-lang', lang);
   currentLang = lang;
+  // タイトル切り替え
+  const titleJa = document.documentElement.dataset.titleJa;
+  const titleEn = document.documentElement.dataset.titleEn;
+  if (lang === 'en' && titleEn) document.title = titleEn;
+  else if (lang === 'ja' && titleJa) document.title = titleJa;
   runTypewriter(lang);
 }
 const savedLang = localStorage.getItem('polar-lang') || 'ja';
@@ -392,3 +397,25 @@ document.querySelectorAll('.member-avatar img').forEach(img => {
   link.href = `mailto:${address}`;
   link.textContent = 'Email';
 })();
+function updateDocumentTitles(lang) {
+  // lang は 'ja' または 'en'
+  const titleEl = document.querySelector('title');
+  if (titleEl) {
+    const txt = titleEl.dataset && titleEl.dataset[lang === 'en' ? 'en' : 'ja'];
+    if (txt) document.title = txt;
+  }
+
+  // OG / Twitter meta 更新（あれば）
+  const og = document.querySelector('meta[property="og:title"]');
+  const tw = document.querySelector('meta[name="twitter:title"]');
+  const metaTxt = (titleEl && titleEl.dataset) ? (titleEl.dataset[lang === 'en' ? 'en' : 'ja']) : document.title;
+  if (og) og.setAttribute('content', metaTxt);
+  if (tw) tw.setAttribute('content', metaTxt);
+}
+// 例: 言語切替ボタンで呼ぶ
+// document.getElementById('langBtn').addEventListener('click', () => {
+//   const newLang = (document.documentElement.lang === 'ja') ? 'en' : 'ja';
+//   document.documentElement.lang = newLang;
+//   updateDocumentTitles(newLang);
+//   // 既存のテキスト置換処理があればそちらも呼ぶ
+// });

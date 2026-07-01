@@ -27,6 +27,11 @@ function applyLang(lang) {
   btn.textContent = lang === 'ja' ? 'EN' : 'JA';
   btn.setAttribute('aria-label', lang === 'ja' ? 'Switch to English' : '日本語に切り替える');
   document.documentElement.lang = lang === 'ja' ? 'ja' : 'en';
+  // タイトル切り替え
+  const titleJa = document.documentElement.dataset.titleJa;
+  const titleEn = document.documentElement.dataset.titleEn;
+  if (lang === 'en' && titleEn) document.title = titleEn;
+  else if (lang === 'ja' && titleJa) document.title = titleJa;
     document.querySelectorAll('img[data-src-ja]').forEach(img => {
     const src = lang === 'ja' ? img.dataset.srcJa : img.dataset.srcEn;
     if (src) img.src = src;
