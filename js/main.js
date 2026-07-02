@@ -336,9 +336,11 @@ function setupValidation(form) {
   });
 }
 
-const contactForm    = document.querySelector('.contact-form');
-const newsletterForm = document.querySelector('.newsletter-form');
+const contactForm = document.querySelector('.contact-form');
 if (contactForm) setupValidation(contactForm);
+
+/* Newsletter submission handling temporarily disabled.
+const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', function (e) {
     const input = this.querySelector('input[type="email"]');
@@ -364,6 +366,7 @@ if (newsletterForm) {
     setTimeout(() => { btn.disabled = false; btn.textContent = orig; }, 8000);
   });
 }
+*/
 
 /* ─────────────────────────────────────────
    9. アバター画像フォールバック（読み込み失敗時に頭文字を表示）

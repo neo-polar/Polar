@@ -5,7 +5,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ★ title を記事タイトルに変更 -->
   <title>公式Webサイトを公開しました — Polar</title>
   <meta name="description" content="Polarの公式Webサイトを公開しました" />
 
@@ -23,7 +22,7 @@
 
   <link rel="icon" href="../Polar_favicon.png" type="image/svg+xml" />
   <link rel="alternate icon" href="../Polar_favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="../Polar_favicon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,19 +62,15 @@
         <span class="sep" aria-hidden="true">/</span>
         <a href="../news.html" data-ja="お知らせ" data-en="News">お知らせ</a>
         <span class="sep" aria-hidden="true">/</span>
-        <!-- ★ 記事タイトルを日英両方入れる -->
         <span data-ja="公式Webサイトを公開しました" data-en="We have launched our official website.">公式Webサイトを公開しました</span>
       </nav>
 
       <!-- 記事ヘッダー -->
       <header class="article-header">
         <div class="article-meta">
-          <!-- ★ datetime="YYYY-MM-DD" と表示テキスト YYYY.MM.DD を実際の日付に変更 -->
-          <time class="article-date" datetime="YYYY-MM-DD">YYYY.MM.DD</time>
-          <!-- ★ タグは「お知らせ/Notice」「活動報告/Report」「イベント/Event」「リリース/Release」から選ぶ -->
+          <time class="article-date" datetime="2026-07-02">2026.07.02</time>
           <span class="article-tag" data-ja="お知らせ" data-en="Notice">お知らせ</span>
         </div>
-        <!-- ★ 記事タイトルを日英両方入れる -->
         <h1 class="article-title"
             data-ja="公式Webサイトを公開しました"
             data-en="We have launched our official website.">公式Webサイトを公開しました</h1>
@@ -102,9 +97,9 @@
       <!-- 本文 -->
       <div class="article-body">
 
-        <p data-ja="Polar の公式 Web サイトを公開しました。Polar は、ジャンルの壁を越えて活動するクリエイター・エンジニア・デザイナーが集まる組織です。音楽・映像・イラスト・文章・プログラミングなど、それぞれの専門性を交差させながら、混沌の中に秩序を見出し、好奇心を原動力として新しいものを生み出し続けます。"
-           data-en="We have launched the official Polar website. Polar is an organization of creators, engineers, and designers working across boundaries. By intersecting our expertise in music, video, illustration, writing, and programming, we find order within chaos and continue to create new things driven by our curiosity.">
-          Polar の公式 Web サイトを公開しました。Polar は、ジャンルの壁を越えて活動するクリエイター・エンジニア・デザイナーが集まる組織です。音楽・映像・イラスト・文章・プログラミングなど、それぞれの専門性を交差させながら、混沌の中に秩序を見出し、好奇心を原動力として新しいものを生み出し続けます。
+        <p data-ja="Polar の公式 Web サイトを公開しました。Polar は、さまざまなジャンルの人たちが価値を共有しあい、新しいものを生み出すことを支援する組織です。音楽・映像・イラスト・文章・プログラミングなど、個人でもチームでも、自分のペースで表現や創作を形にできる場所を目指しています。"
+           data-en="We have launched the official Polar website. Polar is an organization that supports people from a wide variety of genres in sharing their values with one another and creating new things together. Whether working solo or as a team, we aim to be a place where anyone can bring their expressions and creations to life — at their own pace, in music, video, illustration, writing, programming, and beyond.">
+          Polar の公式 Web サイトを公開しました。Polar は、さまざまなジャンルの人たちが価値を共有しあい、新しいものを生み出すことを支援する組織です。音楽・映像・イラスト・文章・プログラミングなど、個人でもチームでも、自分のペースで表現や創作を形にできる場所を目指しています。
         </p>
 
         <p data-ja="私たちは、2つの大きな軸を掲げて活動しています。ひとつは「Vision：ジャンルを超えた表現の可能性を追求する」こと。そしてもうひとつは「Mission：好奇心を熱意をもって形にし、世界と共有する」ことです。この場所は、私たちの熱意が形になり、世界へと繋がっていく最初の出発点となります。"
@@ -142,6 +137,7 @@
           <span class="logo">Polar</span>
           <p data-ja="熱意で知を研ぎ澄ます" data-en="Curiosity, shaped by passion.">熱意で知を研ぎ澄ます</p>
         </div>
+        <!-- Newsletter section temporarily disabled. Re-enable by uncommenting this block.
         <div class="footer-newsletter">
           <p data-ja="ニュースレター登録" data-en="Newsletter">ニュースレター登録</p>
           <form class="newsletter-form" aria-label="ニュースレター登録フォーム"
@@ -157,12 +153,19 @@
                     data-ja="登録" data-en="Subscribe">登録</button>
           </form>
         </div>
+        -->
         <div class="footer-links">
           <a href="https://x.com/polar_universe" target="_blank" rel="noopener noreferrer"
              aria-label="Polar 公式X @polar_universe（外部リンク）"
              class="x-lockup">
-            <img src="../images/logo-black.png" alt="X" class="x-logo" />
+            <img src="../images/sns_x_logo.png" alt="X" class="x-logo" />
             <span class="x-handle">@polar_universe</span>
+          </a>
+          <a href="https://github.com/neo-polar" target="_blank" rel="noopener noreferrer"
+             aria-label="Polar GitHub（外部リンク）"
+             class="x-lockup">
+            <img src="../images/sns_GitHub_logo.png" alt="GitHub" class="x-logo" />
+            <span class="x-handle">neo-polar</span>
           </a>
           <a href="../privacy-policy.html" aria-label="プライバシーポリシーを確認する" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a>
           <a href="../terms.html" aria-label="利用規約を確認する" data-ja="利用規約" data-en="Terms of Use">利用規約</a>

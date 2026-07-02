@@ -94,7 +94,7 @@ window.addEventListener('scroll', () => {
 })();
 
 /* ─── ニュースレター二重送信防止 ─── */
-// 変更後
+/* Newsletter submission handling temporarily disabled.
 const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', function (e) {
@@ -121,6 +121,7 @@ if (newsletterForm) {
     setTimeout(() => { btn.disabled = false; btn.textContent = orig; }, 8000);
   });
 }
+*/
 
 /* ─── ニュースリストのフェードイン ─── */
 if (!prefersReduced && 'IntersectionObserver' in window) {

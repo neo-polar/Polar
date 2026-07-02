@@ -11,23 +11,23 @@ Polar/
 ├── vision_mission.html       Vision & Mission ページ
 ├── privacy-policy.html       プライバシーポリシー
 ├── terms.html                利用規約
-├── news/                     ← 個別記事フォルダ
-│   ├── 2026-06-DD.html
-│   ├── 2026-06-01.html
-│   └── 2026-05-14.html
 ├── README.md                 このファイル
 ├── .nojekyll                 GitHub Pages 用（空ファイル）
+├── Polar_favicon.png         ファビコン
 ├── css/
 │   ├── style.css             メインスタイルシート
 │   └── article.css           記事ページ用スタイルシート
 ├── js/
 │   ├── main.js               index.html 用スクリプト
 │   └── news.js               news.html / 記事ページ用スクリプト
-└── images/
+├── news/                     お知らせ記事フォルダ（追加時に更新）
+├── members/                  メンバープロフィールフォルダ
+└── images/                   画像ファイル
     ├── Polar_logo.png        ロゴ
-    ├── logo-black.png        X ロゴ
+    ├── og-image.png          OGP用画像
     ├── gallery/              ギャラリー画像
-    └── avatar_*.png          メンバー写真
+    ├── avatar_*.png          メンバー写真
+    └── ...
 ```
 
 ## セクション
