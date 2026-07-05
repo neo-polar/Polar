@@ -273,6 +273,10 @@ section { padding: 88px 0; }
 .gallery-item:hover .gallery-placeholder { border-color: rgba(8,145,178,0.2); }
 
 /* note カード */
+.note-icon-img {
+  border-radius: 8px;
+  display: block;
+}
 .gallery-desc {
   font-size: 0.95rem; color: var(--clr-muted); margin-bottom: 28px; line-height: 1.8;
 }
