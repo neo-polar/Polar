@@ -45,10 +45,7 @@ Polar/
 ## 今後の対応が必要な箇所
 
 - [ ] `css/style.css` の `--clr-accent` をアクセントカラー確定後に変更
-- [ ] メンバーの一言コメントを記入
 - [ ] ギャラリー画像を `images/` に配置してHTMLを更新
-- [ ] メンバー写真を `images/avatar_*.png` に配置してHTMLを更新
-- [ ] SNS（Discord等）のURLを差し替え（現在コメントアウト済み）
 - [ ] Google Analytics の設定（公開後）
 
 ## 📰 News 更新ルール
@@ -76,8 +73,6 @@ Polar/
   https://[ユーザー名].github.io/Polar/images/og-image.png
   ```
 - [ ] OGP用の画像 `images/og-image.png` を作成・配置する（推奨: 1200×630px）
-- [ ] Discord URLが決まったら `index.html` のコメントアウトを外す
-- [ ] メンバーアバター画像（`images/avatar_*.png`）を配置する
 
 ## 🔒 セキュリティチェックリスト
 
